@@ -592,7 +592,7 @@ textarea {
   margin-bottom: 50px;
 }
 
-.filter: :last-child {
+.filter :last-child {
   margin-right: 0px;
 }
 
