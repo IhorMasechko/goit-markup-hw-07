@@ -6,14 +6,12 @@
 .nav-site {
   display: flex;
   gap: 50px;
+  margin-left: 93px;
 }
 
 .nav-site__item {
   padding-top: 32px;
   padding-bottom: 32px;
-  & :first-child {
-    margin-left: 93px;
-  }
 }
 
 .nav-site__link {
@@ -35,5 +33,20 @@
     letter-spacing: 0.02em;
     display: block;
     position: relative;
+  }
+  &:hover,
+  &:focus {
+    color: $nav-text-color;
+  }
+  &--current::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -33px;
+    left: 0;
+    border-radius: 2px;
+    background-color: $nav-text-color;
   }
 }
