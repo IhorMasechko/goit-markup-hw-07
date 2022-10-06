@@ -63,65 +63,69 @@
 
     <main>
       <section class="section main">
-        <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button-main" data-modal-open>
+        <h1 class="main__title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="main__button" data-modal-open>
           Замовити послугу
         </button>
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is--hidden" data-modal>
           <div class="modal">
-            <button class="button-close" type="button" data-modal-close>
-              <svg class="icon-close" width="11" height="11">
+            <button class="modal__button--close" type="button" data-modal-close>
+              <svg class="modal__icon--close" width="11" height="11">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
             <form autocomplete="off">
               <div class="form-bloc" role="group">
-                <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
-                <label class="form-item"
+                <p class="form-bloc__title">
+                  Залиште свої дані, ми вам передзвонимо
+                </p>
+                <label class="form-bloc__lable"
                   >Ім'я
-                  <input class="form-input" type="name" name="name" />
-                  <svg class="form-icon" width="18" height="18">
+                  <input class="form-bloc__input" type="name" name="name" />
+                  <svg class="form-bloc__icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-modal-1"></use>
                   </svg>
                 </label>
-                <label class="form-item"
+                <label class="form-bloc__lable"
                   >Телефон
-                  <input class="form-input" type="tel" name="tel" />
-                  <svg class="form-icon" width="18" height="18">
+                  <input class="form-bloc__input" type="tel" name="tel" />
+                  <svg class="form-bloc__icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-modal-2"></use>
                   </svg>
                 </label>
-                <label class="form-item"
+                <label class="form-bloc__lable"
                   >Пошта
-                  <input class="form-input" type="email" name="email" />
-                  <svg class="form-icon" width="18" height="18">
+                  <input class="form-bloc__input" type="email" name="email" />
+                  <svg class="form-bloc__icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-modal-3"></use>
                   </svg>
                 </label>
-                <label class="form-item"
+                <label class="form-bloc__label"
                   >Коментар
                   <textarea
-                    class="tips"
+                    class="form-bloc__text"
                     name="comment"
                     rows="5"
                     placeholder="Введіть текст"
                   ></textarea>
                 </label>
               </div>
-              <label class="form-policy">
+              <label class="form-bloc__label--policy">
                 <input
-                  class="checkbox"
+                  class="form-bloc__checkbox"
                   type="checkbox"
                   name="policy"
                   value="policy"
                 />
-                <svg class="check-svg" width="16" height="15">
+                <svg class="form-bloc__icon" width="16" height="15">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
                 Погоджуюся з розсилкою та приймаю
-                <a class="agreement" href="#">Умови договору</a>
+                <a class="form-bloc__link" href="#">Умови договору</a>
               </label>
-              <button class="modal-button" type="submit">Відправити</button>
+              <button class="form-bloc__button" type="submit">
+                Відправити
+              </button>
             </form>
           </div>
         </div>
