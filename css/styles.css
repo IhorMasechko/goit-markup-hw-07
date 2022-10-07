@@ -674,7 +674,7 @@ textarea {
 
 .box-clients:hover svg,
 .box-clients:focus svg {
-  fill: var(--nav-text-color);
+  border-color: var(--nav-text-color);
 }
 
 .text-join {
